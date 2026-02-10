@@ -44,10 +44,17 @@ header {
   height: 420px;
   margin-bottom: 20px;
   color: white;
-   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+   /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
+    transition:
+    transform 0.45s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.45s ease;
+  will-change: transform;
 }
 .card:hover{
-transform: scale(0.95); /* zoom out */
+  top: -10px;
+  cursor: pointer;
+transform: translateY(-10px);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
 }
 .text{
@@ -96,6 +103,15 @@ button:hover{
   gap: 130px;
   /* gap: 20%; */
   align-items: center;
+}
+.checkout{
+ display: flex;
+  justify-content: center;
+  border-radius: 23px;
+}
+.checkout button:hover{
+  border: 3px solid #FF8A3D;
+  
 }
 @media (max-width: 600px) {
    .cart-page{
