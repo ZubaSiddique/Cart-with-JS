@@ -1,9 +1,16 @@
 body {
   font-family: Arial, sans-serif;
-  background: #f4f4f4;
+  background:#eeeeee;
   margin: 0;
 }
-
+.mainpage{
+   background: linear-gradient(
+  to bottom right,
+  #FFAB76 20%,
+  #FDD7AA 50%,
+  #F3C583 100%
+);
+}
 header {
   background: #222;
   color: white;
@@ -53,7 +60,7 @@ img{
 button {
   padding: 12px 15px;
   border: none;
-  background: #F85959;
+  background: #FF8A3D ;
   color:black;
   font-size: larger;
   font-weight: bolder;
@@ -61,20 +68,56 @@ button {
   border-radius: 25px;
 }
 button:hover{
-  color: white;
+  background-color: #222;
+  color: #FF8A3D;
+  border: 2px solid #FF8A3D;
 }
 .cart-page {
   width: 60%;
   margin: 40px auto;
   background: white;
   padding: 20px;
+  border-radius: 20px;
 }
 
 .cart-item {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-bottom: 10px;
+  /* gap: 50px; */
 }
+.item-info {
+  display: flex;
+  gap: 130px;
+  /* gap: 20%; */
+  align-items: center;
+}
+@media (max-width: 600px) {
+   .cart-page{
+    width: 90%;
+    padding: 10px;
+   }
+  .cart-item {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+    margin-bottom: 30px;
+  }
+
+  /* Row 1 */
+  .item-info {
+    justify-content: space-between;
+  }
+
+  /* Row 2 (right side) */
+  .jsbuttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+  }
+}
+
 .qty-btn{
   background-color: white;
   padding: 4px 10px;
@@ -110,14 +153,13 @@ font-size: 14px;
   font-weight: 500;
   color: black;
 }
-
-footer{
-  height: 45px;
-  font-weight: 400;
-  background-color: #c3bebe;
-  align-items: center;
+.last{
   display: flex;
   justify-content: center;
+  padding-bottom: 35px;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 20px;
 }
 @media (max-width:420px) {
   .card{

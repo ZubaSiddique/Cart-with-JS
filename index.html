@@ -1,50 +1,53 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Shop</title>
+  <title>🍂Shop</title>
   <link rel="stylesheet" href="style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 <body>
 
 <!-- HEADER -->
+ <div class="mainpage">
 <header>
-  <h2>My Shop</h2>
+  <h2>My Shop🎀</h2>
   <a href="cart.html" class="cart-icon">🛒 <span id="cartCount">0</span></a>
 </header>
 
 <!-- PRODUCTS -->
 <div class="products">
 
-  <div class="card">
+  <div class="card" data-aos="zoom-in-up"  >
     <img src="img/bag.jpg" alt="">
     <h3>Bag</h3>
     <p>Rs. 800</p>
     <button onclick="addToCart('Bag', 800)">Add to Cart</button>
   </div>
 
-  <div class="card">
+  <div class="card" data-aos="zoom-in-up">
     <img src="img/shoes.jpg" alt="">
     <h3>Shoes</h3>
     <p>Rs. 1200</p>
     <button onclick="addToCart('Shoes', 1200)">Add to Cart</button>
   </div>
 
- <div class="card">
+ <div class="card" data-aos="zoom-in-up">
     <img src="img/stoler.jpg" alt="">
     <h3>Scarfs</h3>
     <p>Rs. 1000</p>
     <button onclick="addToCart('Scarfs', 1000)">Add to Cart</button>
   </div>
 
-   <div class="card">
+   <div class="card" data-aos="zoom-in-up">
     <img src="img/dress.jpg" alt="">
     <h3>Dresses</h3>
     <p>Rs. 2000</p>
     <button onclick="addToCart('Dresses', 2000)">Add to Cart</button>
   </div>
 
-<div class="card">
+<div class="card" data-aos="zoom-in-up">
     <img src="img/jewelley.jpg" alt="">
     <h3>Accessories</h3>
     <p>Rs. 900</p>
@@ -52,7 +55,7 @@
   </div>
 
 
-   <div class="card">
+   <div class="card" data-aos="zoom-in-up">
     <img src="img/watch.jpg" alt="">
     <h3>Watches</h3>
     <p>Rs. 1050</p>
@@ -60,24 +63,39 @@
   </div>
 
    
-   <div class="card">
+   <div class="card" data-aos="zoom-in-up">
     <img class="bangles" src="img/54-2.jpg" alt="">
     <h3>Bangles</h3>
     <p>Rs. 500</p>
     <button onclick="addToCart('Bangles', 500)">Add to Cart</button>
   </div>
 
-   <div class="card">
-    <img src="img/Abaya.jpg" alt="">
+   <div class="card" data-aos="zoom-in-up">
+    <img src="img/abaya2.jpg" alt="">
     <h3>Abaya</h3>
     <p>Rs. 2500</p>
     <button onclick="addToCart('Abaya', 2500)">Add to Cart</button>
   </div>
 
 </div>
+<div class="last">❤️ Thanks for shopping with us!
+</div>
+</div>
 
-<footer>All rights reserved 2026</footer>
+<!-- AOS library -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+<!-- Your own JS -->
 <script src="script.js"></script>
+
+<!-- Initialize AOS -->
+<script>
+  AOS.init({
+    duration: 700,
+    easing: "ease-in-out",
+    once: true
+  });
+</script>
+
 </body>
 </html>
