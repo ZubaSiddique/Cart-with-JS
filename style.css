@@ -44,8 +44,12 @@ header {
   height: 420px;
   margin-bottom: 20px;
   color: white;
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
+.card:hover{
+transform: scale(0.95); /* zoom out */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
 .text{
   padding-bottom: 0px;
 }
@@ -124,6 +128,8 @@ button:hover{
 }
 .qty-btn:hover{
   color: black;
+  background-color: white;
+  border: none;
 }
 .jsbuttons{
   display: flex;
@@ -144,6 +150,8 @@ font-size: 14px;
   cursor : pointer;
   color:black;
   font-weight: bold;
+  background: white;
+  border: none;
 }
 .back{
   background-color: white;
